@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-website/static/css/main.1d367166.css",
+    "main.js": "/my-portfolio-website/static/js/main.543dac33.js",
+    "static/js/453.8cf8f105.chunk.js": "/my-portfolio-website/static/js/453.8cf8f105.chunk.js",
+    "static/media/starfishImg.PNG": "/my-portfolio-website/static/media/starfishImg.4740c1ae9923b12ae126.PNG",
+    "static/media/Landing page.PNG": "/my-portfolio-website/static/media/Landing page.bb5351e30d24b341d9da.PNG",
+    "static/media/FCCWebdesignCert.jpg": "/my-portfolio-website/static/media/FCCWebdesignCert.27edf0fe44cab2e92389.jpg",
+    "static/media/FCCFront-endLibrariesCert.jpg": "/my-portfolio-website/static/media/FCCFront-endLibrariesCert.382bc818ecc6bd539e6b.jpg",
+    "static/media/FCCJavascriptCert.jpg": "/my-portfolio-website/static/media/FCCJavascriptCert.520f03eca1b78ffa6a70.jpg",
+    "static/media/Cipher.PNG": "/my-portfolio-website/static/media/Cipher.5ca6735534fb82dcf409.PNG",
+    "static/media/Introduction to JavaScript_certificate.jpg": "/my-portfolio-website/static/media/Introduction to JavaScript_certificate.9b16e3f540fe74c5c386.jpg",
+    "static/media/Game Development with JS_certificate.jpg": "/my-portfolio-website/static/media/Game Development with JS_certificate.e19728a89734a65b906e.jpg",
+    "static/media/Responsive Web Design_certificate.jpg": "/my-portfolio-website/static/media/Responsive Web Design_certificate.b5c8adf1c6226e39dc38.jpg",
+    "static/media/JavaScript Intermediate_certificate (2).jpg": "/my-portfolio-website/static/media/JavaScript Intermediate_certificate (2).31a3a33e1514d245bcf8.jpg",
+    "static/media/Introduction to HTML_certificate.jpg": "/my-portfolio-website/static/media/Introduction to HTML_certificate.fa63d4c3c8e5b94e1ef2.jpg",
+    "static/media/Introduction to Python_certificate (1).jpg": "/my-portfolio-website/static/media/Introduction to Python_certificate (1).aca210d14edf2d084ec5.jpg",
+    "static/media/Python Intermediate_certificate (1).jpg": "/my-portfolio-website/static/media/Python Intermediate_certificate (1).01283c90e4dd6ef4b582.jpg",
+    "static/media/Introduction to CSS_certificate.jpg": "/my-portfolio-website/static/media/Introduction to CSS_certificate.2b67477e62abd11ba254.jpg",
+    "static/media/ML for Beginners_certificate (1).jpg": "/my-portfolio-website/static/media/ML for Beginners_certificate (1).961ed5d75bd3ac034be1.jpg",
+    "static/media/Tech for Everyone_certificate (1).jpg": "/my-portfolio-website/static/media/Tech for Everyone_certificate (1).16429ed61dee47f755f2.jpg",
+    "static/media/salarImage.jpg": "/my-portfolio-website/static/media/salarImage.e4e12eb94550e7e20704.jpg",
+    "static/media/PHP_certificate.jpg": "/my-portfolio-website/static/media/PHP_certificate.9995dbd23ce327a24f5d.jpg",
+    "static/media/SOLAR.PNG": "/my-portfolio-website/static/media/SOLAR.05deb2214459c5e6f456.PNG",
+    "index.html": "/my-portfolio-website/index.html",
+    "main.1d367166.css.map": "/my-portfolio-website/static/css/main.1d367166.css.map",
+    "main.543dac33.js.map": "/my-portfolio-website/static/js/main.543dac33.js.map",
+    "453.8cf8f105.chunk.js.map": "/my-portfolio-website/static/js/453.8cf8f105.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d367166.css",
+    "static/js/main.543dac33.js"
+  ]
+}
