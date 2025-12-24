@@ -1,0 +1,45 @@
+
+.footer {
+    background: linear-gradient(90deg, #201f1f, #1f1d1d, #201f1f);
+    color: white;
+    padding: 10px;
+    
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: clamp(12px, 2.6vw, 20px);
+    
+}
+
+
+.footer a  {
+    color: white;
+    text-decoration: none;
+    
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 14px;
+
+}
+.footer a:hover {
+    text-decoration: underline;
+    color:#ccc;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    background: linear-gradient(90deg, #050110, #2b10db, #201f1f);
+    width: 100%;
+}
+.copyRight {
+    margin-top: 20px;
+    font-size: clamp(12px, 2.6vw, 18px);
+    background: linear-gradient(90deg, #ffffff, #bbbbbb, #ffffff);
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
