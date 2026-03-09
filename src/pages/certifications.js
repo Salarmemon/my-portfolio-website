@@ -1,5 +1,5 @@
 import React from 'react';
-import FCCWebDesignCert from '../assets/FCCWebdesignCert.jpg';
+import FCCWebDesignCert from '../assets/FCCWebdesignCert.PNG';
 import FCCfrontendLibrariesCert from '../assets/FCCFront-endLibrariesCert.jpg';
 import FCCJavascriptCert from '../assets/FCCJavascriptCert.jpg';
 import GameDevCert from '../assets/Game Development with JS_certificate.jpg';       
@@ -13,6 +13,8 @@ import IntroToPythonCert from '../assets/Introduction to Python_certificate (1).
 import IntroToJavaScriptCert from '../assets/Introduction to JavaScript_certificate.jpg';
 import IntroToHTMLCert from '../assets/Introduction to HTML_certificate.jpg';
 import IntroToCSSCert from '../assets/Introduction to CSS_certificate.jpg';
+import FccPythonCert from '../assets/FCC-PYTHON-CERT.PNG';
+import FccDatabaseCert from '../assets/FCC-DATABASE-CERT.PNG';
 import certStyles from './cert.module.css'
 function Certifications() {
   return (
@@ -21,18 +23,33 @@ function Certifications() {
   <h2>Certifications</h2>
 
   <div className={certStyles.container}>
+        <div className={certStyles.certification}>
+
+            <h3>Relational Database – freeCodeCamp</h3>
+                  <a href="https://freecodecamp.org/certification/salarahmedmemon/relational-databases-v9" target="_blank" rel="noopener noreferrer">
+             <img src={FccDatabaseCert} width="300" />
+            </a>
+              </div>
+
+     <div className={certStyles.certification}>
+
+                  <h3>Python – freeCodeCamp</h3>
+                  <a href="https://freecodecamp.org/certification/salarahmedmemon/python-v9" target="_blank" rel="noopener noreferrer">
+                      <img src={FccPythonCert} width="300" />
+                  </a>
+              </div>
 
   <div className={certStyles.certification}>
 
     <h3>Responsive Web Design – freeCodeCamp</h3>
-    <a href="https://freecodecamp.org/certification/salarahmedmemon/responsive-web-design" target="_blank"rel="noopener noreferrer">
+                  <a href="https://freecodecamp.org/certification/salarahmedmemon/responsive-web-design-v9" target="_blank"rel="noopener noreferrer">
       <img src={FCCWebDesignCert} width="300"/>
     </a> 
   </div>
 
   <div className={certStyles.certification}>
   <h3>JavaScript Algorithms And Data Structures Certification - FreeCodeCamp</h3>
-  <a href="https://freecodecamp.org/certification/salarahmedmemon/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener noreferrer">
+                  <a href="https://freecodecamp.org/certification/salarahmedmemon/javascript-v9" target="_blank" rel="noopener noreferrer">
       <img src={FCCJavascriptCert} width="300"/>
   </a>
   </div>
