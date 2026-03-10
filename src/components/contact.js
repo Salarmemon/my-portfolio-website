@@ -20,7 +20,7 @@ return (
     </div>
 
     <footer className={contactStyles.copyRight}>
-        <p>&copy; 2025. Salar Memon.
+        <p>&copy; 2026. Salar Memon.
         <br/>
         All rights reserved.</p>
     </footer>

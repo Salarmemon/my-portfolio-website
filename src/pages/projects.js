@@ -4,6 +4,7 @@ import solarSystenImage from '../assets/SOLAR.PNG';
 import landingPageImg from '../assets/Landing page.PNG';
 import cipherToolImg from '../assets/Cipher.PNG'
 import starFishImg from '../assets/starfishImg.PNG'
+import weatherAppImg from '../assets/weatherAPP1.PNG'
 function Projects() {
   return (
     <section id="projects" className={ProjectStyles.projects}>
@@ -11,6 +12,46 @@ function Projects() {
 
        <div className={ProjectStyles.projectsContainer}>
       {/* Project 1 */}
+
+        <div className={ProjectStyles.project}>
+          <h3>Weather App— Built with React.js</h3>
+
+          <p>
+            This is a web-based weather application that fetches and displays weather data using an open-source API, built with React and Tailwind. The app provides users with real-time weather information for any city, along with a responsive design and dark mode support. It features separate sections for current daily and hourly forecasts, as well as an intuitive search field to find weather information for any location.
+
+          </p>
+
+          <h3>Key Features</h3>
+          <ul>
+            <li>1 Real-time weather of any city.</li>
+            <li>2 Responsive design, compatible with all major screen sizes.
+           </li>
+            <li>3 Dark mode support with persistent state.</li>
+            <li>4 Separate section for current daily and hourly forecasts.
+         </li>
+            <li>5 Intuitive search field for finding weather information for any location.</li>
+
+          </ul>
+
+          <a
+            href="https://salarmemon.github.io/Weather-App/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://github.com/Salarmemon/Weather-App-"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <br />
+          <img src={weatherAppImg} alt='weather-app image' className={ProjectStyles.image} />
+        </div>
+        {/* Project 2 */}
       <div className={ProjectStyles.project}>
         <h3>Interactive 3D Solar System — Built with Three.js</h3>
 

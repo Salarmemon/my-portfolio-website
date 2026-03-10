@@ -4,6 +4,7 @@ import styled from './about.module.css';
 
 function About() {  
     return (
+        <>
         <section id="about" className={styled.about}>
             <div id="hero" className={styled.hero}>
         <h2>Hi, I'm Salar Memon</h2>
@@ -22,6 +23,20 @@ function About() {
 </div> 
 <a href="https://www.fiverr.com/s/Q7KyZKj" target="_blank" rel="noopener noreferrer" className={styled.hireMeBtn}>Hire Me</a>
         </section> 
+
+        <section id="skills" className={styled.skills}>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React.js, Tailwind CSS</li>
+            <li>Python, SQL, PostgresSql</li>
+            <li>Responsive Web Design</li>
+            <li>Version Control (Git)</li>
+            
+        </ul>
+        </section>
+
+        </>
     )                             
 }
 export default About;

@@ -34,6 +34,15 @@
     box-shadow: 0 10px 30px rgba(80, 120, 200, 0.6);
 }
 
+.skills {
+    padding: clamp(40px, 8vw, 100px) clamp(20px, 8vw, 80px);
+    background: linear-gradient(135deg, #283593, #3949ab);
+    color: #fdfdfd;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(26, 35, 126, 0.5);
+    margin-top:25px;
+}
 /* Click effect — compresses slightly */
 .hireMeBtn:active {
     transform: translateY(2px) scale(0.98);
