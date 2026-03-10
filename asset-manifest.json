@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/my-portfolio-website/static/css/main.1d367166.css",
-    "main.js": "/my-portfolio-website/static/js/main.543dac33.js",
+    "main.css": "/my-portfolio-website/static/css/main.2e7833fe.css",
+    "main.js": "/my-portfolio-website/static/js/main.0dda0a81.js",
     "static/js/453.8cf8f105.chunk.js": "/my-portfolio-website/static/js/453.8cf8f105.chunk.js",
     "static/media/starfishImg.PNG": "/my-portfolio-website/static/media/starfishImg.4740c1ae9923b12ae126.PNG",
     "static/media/Landing page.PNG": "/my-portfolio-website/static/media/Landing page.bb5351e30d24b341d9da.PNG",
-    "static/media/FCCWebdesignCert.jpg": "/my-portfolio-website/static/media/FCCWebdesignCert.27edf0fe44cab2e92389.jpg",
+    "static/media/weatherAPP1.PNG": "/my-portfolio-website/static/media/weatherAPP1.1e45a2adde41ffdd6b1c.PNG",
+    "static/media/FCCWebdesignCert.PNG": "/my-portfolio-website/static/media/FCCWebdesignCert.2f7bbea0862da0304bc4.PNG",
+    "static/media/FCC-DATABASE-CERT.PNG": "/my-portfolio-website/static/media/FCC-DATABASE-CERT.81a9505384905ff402ba.PNG",
+    "static/media/FCC-PYTHON-CERT.PNG": "/my-portfolio-website/static/media/FCC-PYTHON-CERT.0e262088af3c8b41ac5a.PNG",
     "static/media/FCCFront-endLibrariesCert.jpg": "/my-portfolio-website/static/media/FCCFront-endLibrariesCert.382bc818ecc6bd539e6b.jpg",
     "static/media/FCCJavascriptCert.jpg": "/my-portfolio-website/static/media/FCCJavascriptCert.520f03eca1b78ffa6a70.jpg",
     "static/media/Cipher.PNG": "/my-portfolio-website/static/media/Cipher.5ca6735534fb82dcf409.PNG",
@@ -23,12 +26,12 @@
     "static/media/PHP_certificate.jpg": "/my-portfolio-website/static/media/PHP_certificate.9995dbd23ce327a24f5d.jpg",
     "static/media/SOLAR.PNG": "/my-portfolio-website/static/media/SOLAR.05deb2214459c5e6f456.PNG",
     "index.html": "/my-portfolio-website/index.html",
-    "main.1d367166.css.map": "/my-portfolio-website/static/css/main.1d367166.css.map",
-    "main.543dac33.js.map": "/my-portfolio-website/static/js/main.543dac33.js.map",
+    "main.2e7833fe.css.map": "/my-portfolio-website/static/css/main.2e7833fe.css.map",
+    "main.0dda0a81.js.map": "/my-portfolio-website/static/js/main.0dda0a81.js.map",
     "453.8cf8f105.chunk.js.map": "/my-portfolio-website/static/js/453.8cf8f105.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d367166.css",
-    "static/js/main.543dac33.js"
+    "static/css/main.2e7833fe.css",
+    "static/js/main.0dda0a81.js"
   ]
 }
