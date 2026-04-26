@@ -44,7 +44,7 @@ function About({buttonVariants}) {
             <motion.button className={styled.btn} variants={buttonVariants} whileHover="hover">View My Work</motion.button></Link>
     </div>
         <h2>About Me</h2>
-        <motion.div className={styled.hero} initial={{ x: -1000}} whileInView={{ x: 0 }} transition={{ duration: 1, ease: "easeInOut" }} viewport={{once: true}}>
+        <motion.div className={styled.hero} initial={{ x: "-100%"}} whileInView={{ x: 0 }} transition={{ duration: 1, ease: "easeInOut" }} viewport={{once: true}}>
             <p>I am a passionate web developer skilled in HTML, CSS, JavaScript, React, Python, PostgresSql and Tailwind CSS, with experience in front-end web development, I ensure developing, and structuring modern, responsive web pages.
                 My focus is on creating clean layouts, smooth user experiences, and mobile-friendly designs that load fast and work on all devices.
                 <br/>
