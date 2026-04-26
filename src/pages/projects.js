@@ -1,191 +1,108 @@
 import ProjectStyles from './project.module.css';
-
+import { motion } from 'framer-motion'; 
 import solarSystenImage from '../assets/SOLAR.PNG';
 import landingPageImg from '../assets/Landing page.PNG';
 import cipherToolImg from '../assets/Cipher.PNG'
 import starFishImg from '../assets/starfishImg.PNG'
 import weatherAppImg from '../assets/weatherAPP1.PNG'
+
 function Projects() {
+
+  const projects = [
+    { 
+      title: "Weather App— Built with React.js",
+      description: "This is a web-based weather application that fetches and displays weather data using an open-source API, built with React and Tailwind. The app provides users with real-time weather information for any city, along with a responsive design and dark mode support. It features separate sections for current daily and hourly forecasts, as well as an intuitive search field to find weather information for any location.",
+      features: [
+        "Real-time weather of any city.",
+        "Responsive design, compatible with all major screen sizes.",
+        "Dark mode support with persistent state.",
+        "Separate section for current daily and hourly forecasts.",
+        "Intuitive search field for finding weather information for any location."
+      ],
+      liveDemo: "https://salarmemon.github.io/Weather-App/",
+      github: "https://github.com/Salarmemon/Weather-App"
+    },
+    {
+      title: "Interactive 3D Solar System — Built with Three.js",
+      description: "Explore the wonders of our universe through this stunning 3D Solar System simulation powered by Three.js.",
+      features: [
+        "Realistic 3D planets with high-quality textures",
+        "Accurate orbital animations and natural lighting",
+        "Dynamic sunlight and shadows",
+        "Optimized performance for desktop and mobile"
+      ],
+      liveDemo: "https://salarmemon.github.io/Solar-System-/",
+      github: "https://github.com/Salarmemon/Solar-System-"
+    }, 
+    {
+      title: "Responsive Landing Page for AI Writing Assistant",
+      description: "This is a personal project in which I developed a responsive landing page for an AI-powered writing assistant using HTML, CSS, and JavaScript. This project showcases my front-end development skills, including responsive design, user interface creation, and interactive features.",
+      features: [
+        "Fully responsive design that adapts to all screen sizes",
+        "Clean and modern UI/UX design",
+        "Interactive elements such as hover effects and smooth scrolling",
+        "Optimized for fast loading and performance",
+        "Built with semantic HTML, CSS, and vanilla JavaScript"
+      ],
+      liveDemo: "https://fantastic-cannoli-d714b4.netlify.app/",
+      github: "https://github.com/Salarmemon/Landing-Page-AI-Writing-Assistant"
+    },
+    {
+      title: "Cipher Tool", 
+      description: "A lightweight JavaScript app for encrypting and decrypting text using Vigenère and Caesar ciphers.",
+      features: [
+        "Supports Vigenère and Caesar ciphers",
+        "Real-time encryption and decryption",
+        "Smart key detection & validation",
+        "Dark mode with persistent state",
+        "Copy to clipboard",
+        "Download encrypted/decrypted text",
+        "Generate QR codes",
+        "Fully responsive design",
+        "Clean HTML, CSS, and JavaScript"
+      ],
+      liveDemo: "https://lighthearted-cassata-888e2e.netlify.app/",
+      github: "https://github.com/Salarmemon/Cipher-Tool"
+    },
+    {
+      title: "Starfish HTML5 Game",
+      description: "This is a browser-based game built using HTML5, CSS, and JavaScript. Your goal is to collect fish to help your starfish grow. The more fish you collect, the larger your starfish becomes.",
+      features: [
+        "Completly responsive all screen sizes", 
+        "Intuitive controls",
+        "loads quickly in any browser"
+      ],
+      liveDemo: "https://gentle-tiramisu-043f3a.netlify.app/",
+      github: "https://github.com/Salarmemon/Starfish-Game"
+    }
+  ];
+
   return (
-    <section id="projects" className={ProjectStyles.projects}>
+    <motion.section id="projects" className={ProjectStyles.projects} initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, ease: "easeIn"}} viewport={{once: true}}>
       <h2>Projects</h2>
 
        <div className={ProjectStyles.projectsContainer}>
-      {/* Project 1 */}
 
-        <div className={ProjectStyles.project}>
-          <h3>Weather App— Built with React.js</h3>
-
-          <p>
-            This is a web-based weather application that fetches and displays weather data using an open-source API, built with React and Tailwind. The app provides users with real-time weather information for any city, along with a responsive design and dark mode support. It features separate sections for current daily and hourly forecasts, as well as an intuitive search field to find weather information for any location.
-
-          </p>
-
-          <h3>Key Features</h3>
-          <ul>
-            <li>1 Real-time weather of any city.</li>
-            <li>2 Responsive design, compatible with all major screen sizes.
-           </li>
-            <li>3 Dark mode support with persistent state.</li>
-            <li>4 Separate section for current daily and hourly forecasts.
-         </li>
-            <li>5 Intuitive search field for finding weather information for any location.</li>
-
-          </ul>
-
-          <a
-            href="https://salarmemon.github.io/Weather-App/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://github.com/Salarmemon/Weather-App-"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <br />
-          <img src={weatherAppImg} alt='weather-app image' className={ProjectStyles.image} />
-        </div>
-        {/* Project 2 */}
-      <div className={ProjectStyles.project}>
-        <h3>Interactive 3D Solar System — Built with Three.js</h3>
-
-        <p>
-          Explore the wonders of our universe through this stunning 3D Solar
-          System simulation powered by Three.js.
-        </p>
-
-        <h3>Key Features</h3>
-        <ul>
-          <li>Realistic 3D planets with high-quality textures</li>
-          <li>Accurate orbital animations and natural lighting</li>
-          <li>Dynamic sunlight and shadows</li>
-          <li>Optimized performance for desktop and mobile</li>
-        </ul>
-
-        <a
-          href="https://salarmemon.github.io/Solar-System-/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Demo
-        </a>{" "}
-        |{" "}
-        <a
-          href="https://github.com/Salarmemon/Solar-System-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <br/>
-        <img src={solarSystenImage} alt='solar-system image' className={ProjectStyles.image} />
+        {projects.map((project, index) => (
+          <motion.div key={index} className={ProjectStyles.project} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.2 }} viewport={{ once: true }}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <ul>
+              {project.features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+            <div >
+              <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                Live Demo
+              </a> ||   <a href={project.github} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </motion.div>
+        ))}
       </div>
-
-      
-        
-      {/* Project 3 */}
-      <div className={ProjectStyles.project}      >
-        <h3>Responsive Landing Page for AI Writing Assistant</h3>
-        <p>
-          This is a personal project in which I developed a responsive landing page for an AI-powered writing assistant using HTML, CSS, and JavaScript. This project showcases my front-end development skills, including responsive design, user interface creation, and interactive features.
-        </p>
-
-        <a
-          href="https://fantastic-cannoli-d714b4.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Demo
-        </a>{" "}
-        |{" "}
-        <a
-          href="https://github.com/Salarmemon/AI-Writing-Tool-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        <img src={landingPageImg} alt='landing page image' className={ProjectStyles.image}/>
-      </div>
-
-      {/* Project 4 */} 
-      <div className={ProjectStyles.project}>
-        <h3>Cipher Tool</h3>
-
-        <p>
-          A lightweight JavaScript app for encrypting and decrypting text using
-          Vigenère and Caesar ciphers.
-        </p>
-
-        <h3>Features</h3>
-        <ol>
-          <li>Supports Vigenère and Caesar ciphers</li>
-          <li>Real-time encryption and decryption</li>
-          <li>Smart key detection & validation</li>
-          <li>Dark mode with persistent state</li>
-          <li>Copy to clipboard</li>
-          <li>Download encrypted/decrypted text</li>
-          <li>Generate QR codes</li>
-          <li>Fully responsive design</li>
-          <li>Clean HTML, CSS, and JavaScript</li>
-        </ol>
-
-        <a
-          href="https://lighthearted-cassata-888e2e.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Demo
-        </a>{" "}
-        |{" "}
-        <a
-          href="https://github.com/Salarmemon/Vigen-re-and-Caesar-cipher-Encryptor-And-Decryptor-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <img src={cipherToolImg} alt='cipher tool image' className={ProjectStyles.image} />
-      </div>
-      {/* Project 4 */} 
-     <div className={ProjectStyles.project}>
-        <h3>Starfish HTML5 Game</h3>
-        <p>This is a browser-based game built using HTML5, CSS, and JavaScript. Your goal is to collect fish to help your starfish grow. The more fish you collect, the larger your starfish becomes.</p>
-        <h3>Features</h3>
-        <ol>
-          <li>Completly responsive all screen sizes 
-          </li>
-          <li>Intuitive controls</li>
-          <li>loads quickly in any browser</li>
-        </ol>
-        <a
-          href="https://gentle-tiramisu-043f3a.netlify.app/"
-          
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-          Live Demo
-        </a>{" "}
-        |{" "}
-        <a
-          href="https://github.com/Salarmemon/StarFish-Game"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <img src={starFishImg} alt='Starfish Game  image' className={ProjectStyles.image} />
-     </div> 
-
-     </div>
-    </section>
+    </motion.section>
   );
 }
 

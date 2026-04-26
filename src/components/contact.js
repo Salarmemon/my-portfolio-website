@@ -1,10 +1,10 @@
 import contactStyles from './contact.module.css';
 import React from 'react';
 import {FaFacebook, FaGithub,FaLinkedin} from 'react-icons/fa';
-
+import { motion } from 'framer-motion';
 function Contact() {
 return (
-<section id="contact" className={contactStyles.footer}>  
+<motion.section id="contact" className={contactStyles.footer} initial={{ y: 200}} whileInView={{ y: 0 }} transition={{ duration: 1, ease: "easeInOut" }} viewport={{once: true}}>  
         <h2>Contact Me</h2>
         <p>My Email: salarahmed91919@gmail.com</p>
         <div className={contactStyles.socials}>
@@ -24,7 +24,7 @@ return (
         <br/>
         All rights reserved.</p>
     </footer>
-</section>
+</motion.section>
 )
 }          
 export default Contact;            

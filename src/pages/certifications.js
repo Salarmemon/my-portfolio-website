@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import FCCWebDesignCert from '../assets/FCCWebdesignCert.PNG';
 import FCCfrontendLibrariesCert from '../assets/FCCFront-endLibrariesCert.jpg';
 import FCCJavascriptCert from '../assets/FCCJavascriptCert.jpg';
@@ -15,131 +17,46 @@ import IntroToHTMLCert from '../assets/Introduction to HTML_certificate.jpg';
 import IntroToCSSCert from '../assets/Introduction to CSS_certificate.jpg';
 import FccPythonCert from '../assets/FCC-PYTHON-CERT.PNG';
 import FccDatabaseCert from '../assets/FCC-DATABASE-CERT.PNG';
-import certStyles from './cert.module.css'
+import certStyles from './cert.module.css';
+
 function Certifications() {
+    const certifications = [
+        { title: "Relational Database – freeCodeCamp", image: FccDatabaseCert, link: "https://freecodecamp.org/certification/salarahmedmemon/relational-databases-v9" },
+        { title: "Python – freeCodeCamp", image: FccPythonCert, link: "https://freecodecamp.org/certification/salarahmedmemon/python-v9" },
+        { title: "Responsive Web Design – freeCodeCamp", image: FCCWebDesignCert, link: "https://freecodecamp.org/certification/salarahmedmemon/responsive-web-design-v9" },
+        { title: "JavaScript Algorithms And Data Structures Certification - FreeCodeCamp", image: FCCJavascriptCert, link: "https://freecodecamp.org/certification/salarahmedmemon/javascript-v9" },
+        { title: "Front-End Development Libraries Certification- FreeCodeCamp", image: FCCfrontendLibrariesCert, link: "https://freecodecamp.org/certification/salarahmedmemon/front-end-development-libraries" },
+        { title: "Game Development Certification - Sololearn", image: GameDevCert, link: "https://api2.sololearn.com/v2/certificates/CT-XFGCZ7JZ/image/png?t=638570604215801100" },
+        { title: "Tech For Everyone Certification - Sololearn", image: TechForEveryoneCert, link: "https://api2.sololearn.com/v2/certificates/CC-UDTIVCMZ/image/png?t=638815152046904950" },
+        { title: "Responsive Web Design Certification - Sololearn", image: ResponsiveWebDesignCert, link: "https://api2.sololearn.com/v2/certificates/CT-0UT64KJI/image/png?t=0" },
+        { title: "Python Intermediate Certification - Sololearn", image: PythonIntermediateCert, link: "https://api2.sololearn.com/v2/certificates   /CC-USILKFOO/image/png?t=638845405585445420" },
+        { title: "PHP Certification - Sololearn", image: PHPCert, link: "https://api2.sololearn.com/v2/certificates/CT-GY2KBN9H/image/png?t=0" },
+        { title: "ML For Beginners Certification - Sololearn", image: MLForBeginnersCert, link: "https://api2.sololearn.com/v2/certificates/CC-KVOBJK5L/image/png?t=638757292651780550" },
+        { title: "JavaScript Intermediate Certification - Sololearn", image: JavaScriptIntermediateCert, link: "https://api2.sololearn.com/v2/certificates/CC-TU39Z2TL/image/png?t=638699388887855820" },
+        { title: "Introduction To Python Certification - Sololearn", image: IntroToPythonCert, link: "https://api2.sololearn.com/v2/certificates/CC-UDTIVCMZ/image/png?t=638815152046904950" },
+        { title: "Introduction To JavaScript Certification - Sololearn", image: IntroToJavaScriptCert, link: "https://api2.sololearn.com/v2/certificates/CC-TU39Z2TL/image/png?t=638699388887855820" },
+        { title: "Introduction To HTML Certification - Sololearn", image: IntroToHTMLCert, link: "https://api2.sololearn.com/v2/certificates/CC-UDTIVCMZ/image/png?t=638815152046904950" },
+        { title: "Introduction To CSS Certification - Sololearn", image: IntroToCSSCert, link: "https://api2.sololearn.com/v2/certificates/CC-UDTIVCMZ/image/png?t=638815152046904950" },
+
+    ];
+
   return (
     
-<section id="certifications" className={certStyles.certifications}>
+      <motion.section id="certifications" className={certStyles.certifications} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, ease: "easeIn" }} viewport={{ once: true }}>
   <h2>Certifications</h2>
 
   <div className={certStyles.container}>
-        <div className={certStyles.certification}>
 
-            <h3>Relational Database – freeCodeCamp</h3>
-                  <a href="https://freecodecamp.org/certification/salarahmedmemon/relational-databases-v9" target="_blank" rel="noopener noreferrer">
-             <img src={FccDatabaseCert} width="300" />
-            </a>
-              </div>
-
-     <div className={certStyles.certification}>
-
-                  <h3>Python – freeCodeCamp</h3>
-                  <a href="https://freecodecamp.org/certification/salarahmedmemon/python-v9" target="_blank" rel="noopener noreferrer">
-                      <img src={FccPythonCert} width="300" />
-                  </a>
-              </div>
-
-  <div className={certStyles.certification}>
-
-    <h3>Responsive Web Design – freeCodeCamp</h3>
-                  <a href="https://freecodecamp.org/certification/salarahmedmemon/responsive-web-design-v9" target="_blank"rel="noopener noreferrer">
-      <img src={FCCWebDesignCert} width="300"/>
-    </a> 
-  </div>
-
-  <div className={certStyles.certification}>
-  <h3>JavaScript Algorithms And Data Structures Certification - FreeCodeCamp</h3>
-                  <a href="https://freecodecamp.org/certification/salarahmedmemon/javascript-v9" target="_blank" rel="noopener noreferrer">
-      <img src={FCCJavascriptCert} width="300"/>
-  </a>
-  </div>
-
-  <div className={certStyles.certification}>
-  <h3>Front-End Development Libraries Certification- FreeCodeCamp</h3>
-  <a href="https://freecodecamp.org/certification/salarahmedmemon/front-end-development-libraries" target="_blank" rel="noopener noreferrer">
-      <img src={FCCfrontendLibrariesCert} width="300"/>
-  </a>
-  </div>
-
-  <div className={certStyles.certification}>
-  <h3>Game Development Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CT-XFGCZ7JZ/image/png?t=638570604215801100" target="_blank" rel="noopener noreferrer">
-      <img src={GameDevCert} width="300"/>
-  </a>
-  </div>
-
-<div className={certStyles.certification}>
- <h3>Tech For Everyone Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-UDTIVCMZ/image/png?t=638815152046904950" target="_blank" rel="noopener noreferrer">
-      <img src={TechForEveryoneCert} width="300"/>
-  </a>
-  </div>
-<div className={certStyles.certification}>
-   <h3>Responsive Web Design Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CT-0UT64KJI/image/png?t=0" target="_blank" rel="noopener noreferrer">
-      <img src={ResponsiveWebDesignCert} width="300"/>
-  </a>
-  </div>
-
-<div className={certStyles.certification}>
-   <h3>Python Intermediate Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-USILKFOO/image/png?t=638845405585445420" target="_blank" rel="noopener noreferrer">
-      <img src={PythonIntermediateCert} width="300"/>
-  </a>
-  </div>
-
-  <div className={certStyles.certification}>
-   <h3>PHP Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CT-GY2KBN9H/image/png?t=0" target="_blank" rel="noopener noreferrer">
-      <img src={PHPCert} width="300"/>
-  </a>
-  </div>
-
-  <div className={certStyles.certification}>
-   <h3>ML For Beginners Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-KVOBJK5L/image/png?t=638757292651780550" target="_blank" rel="noopener noreferrer">
-      <img src={MLForBeginnersCert} width="300"/>
-    </a>
+    {certifications.map((cert, index) => (
+      <motion.div key={index} className={certStyles.certification} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (index % 3) * 0.2 }} viewport={{ once: true }}>
+        <h3>{cert.title}</h3>
+        <a href={cert.link} target="_blank" rel="noopener noreferrer">
+          <img src={cert.image} width="300" alt={`${cert.title} certificate`} />
+        </a>
+      </motion.div>
+    ))}
     </div>
-
-    <div className={certStyles.certification}>
-     <h3>JavaScript Intermediate Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-TU39Z2TL/image/png?t=638699388887855820" target="_blank" rel="noopener noreferrer">
-      <img src={JavaScriptIntermediateCert} width="300"/>
-  </a>
-  </div>
-
-<div className={certStyles.certification}>
-     <h3>Introduction To Python Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-IAQIT4ZI/image/png?t=638722968513711730" target="_blank" rel="noopener noreferrer">
-      <img src={IntroToPythonCert} width="300"/>
-  </a>
-  </div>
-
-<div className={certStyles.certification}>
-     <h3>Introduction To JavaScript Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-LZCWML2J/image/png?t=0" target="_blank" rel="noopener noreferrer">
-      <img src={IntroToJavaScriptCert} width="300"/>
-  </a>
-  </div>
-
- <div className={certStyles.certification}>
-       <h3>Introduction To HTML Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-CESSH8DB/image/png?t=0" target="_blank" rel="noopener noreferrer">
-      <img src={IntroToHTMLCert} width="300"/>
-  </a>
-  </div>
-
-     <div className={certStyles.certification}>
-       <h3>Introduction To CSS Certification - Sololearn</h3>
-  <a href="https://api2.sololearn.com/v2/certificates/CC-TIWQOXVJ/image/png?t=0" target="_blank" rel="noopener noreferrer">
-      <img src={IntroToCSSCert} width="300"/>
-  </a>
-  </div>
-  
-  </div>
-
-</section>
+</motion.section>
 )  
 }
 export default Certifications;
